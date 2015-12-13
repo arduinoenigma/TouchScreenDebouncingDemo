@@ -28,6 +28,7 @@ void loop() {
     Serial.print(p.x);
     Serial.print(" ");
     Serial.println(p.y);
+    Tft.fillCircle(p.x, p.y, 4, RED);
   }
 
   // if no max detection phantom touches are detected
@@ -47,6 +48,8 @@ void loop() {
         if (pressed)
         {
           // do entry tasks here
+
+          Tft.fillCircle(p.x, p.y, 6, GREEN);
 
           Serial.print("initial screen touch at ");
           Serial.print(p.x);
@@ -69,6 +72,8 @@ void loop() {
         else
         {
           // send x and y to task needing press and hold
+          Tft.fillCircle(p.x, p.y, 2, BLUE);
+
           Serial.print("screen touch at ");
           Serial.print(p.x);
           Serial.print(" ");
@@ -80,7 +85,7 @@ void loop() {
         // adjust this threshold, or use timer
         if (releasecount > 10)
         {
-          // cleanup anything drawn
+          Tft.fillRectangle(0, 0, 240, 320, BLACK);
           Serial.println("release registered");
           state = 0;
         }
