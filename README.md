@@ -1,6 +1,8 @@
 # TouchScreenDebouncingDemo
 A short program that demonstrates the noisy character of touchscreens and how to filter it out.
 
+This sketch requires an Arduino UNO and a Seeed TFT Touch Shield. 
+
 On an enigma machine, a key press will move the encoding wheels first, then apply electricity to the entry rotor and the encoded letter will light up in the lamp field. The lamp will be lit for as long as the key is pressed, once the key is released, the lamp will turn off and further key presses will move the rotors again.
 
 When simulating this with a touchscreen, it is vital to ensure that one filters out false release events so that the rotors are not moved unnecessarily.
