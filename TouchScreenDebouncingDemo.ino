@@ -10,8 +10,6 @@ bool pressed = false;
 TouchScreen ts = TouchScreen(XP, YP, XM, YM);
 
 void setup() {
-  // put your setup code here, to run once:
-
   Serial.begin(9600);
   Tft.TFTinit();  //init TFT library
 }
@@ -48,7 +46,6 @@ void loop() {
         if (pressed)
         {
           // do entry tasks here
-
           Tft.fillCircle(p.x, p.y, 6, GREEN);
 
           Serial.print("initial screen touch at ");
@@ -85,7 +82,9 @@ void loop() {
         // adjust this threshold, or use timer
         if (releasecount > 10)
         {
+          // do cleanup tasks here
           Tft.fillRectangle(0, 0, 240, 320, BLACK);
+                    
           Serial.println("release registered");
           state = 0;
         }
