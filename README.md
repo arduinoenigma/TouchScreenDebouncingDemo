@@ -12,31 +12,31 @@ The phantom touch logic was added after noticing that earlier versions of the ma
 A short drag across the screen results in this output, of particular notice is the “no touch detected” line in between the “screen touch at” lines, even though the finger was never lifted during the dragging motion. Even pressing down firmly on one spot results in the occasional “no touch detected” line. Notice the phantom touch while the screen was idle.
 
 initial screen touch at 164 156 <br>
-screen touch at 164 154
-no touch detected
-no touch detected
-screen touch at 159 143
-screen touch at 147 138
-screen touch at 128 139
-screen touch at 106 149
-no touch detected
-screen touch at 77 181
-screen touch at 76 198
-screen touch at 83 207
-screen touch at 97 207
-screen touch at 120 190
-screen touch at 147 161
-screen touch at 160 133
-no touch detected
-no touch detected
-no touch detected
-no touch detected
-no touch detected
-no touch detected
-no touch detected
-no touch detected
-no touch detected
-no touch detected
-no touch detected
-release registered
-Phantom touch at 208 309
+screen touch at 164 154 <br>
+no touch detected <br>
+no touch detected <br>
+screen touch at 159 143 <br>
+screen touch at 147 138 <br>
+screen touch at 128 139 <br>
+screen touch at 106 149 <br>
+no touch detected <br>
+screen touch at 77 181 <br>
+screen touch at 76 198 <br>
+screen touch at 83 207 <br>
+screen touch at 97 207 <br>
+screen touch at 120 190 <br>
+screen touch at 147 161 <br>
+screen touch at 160 133 <br>
+no touch detected <br>
+no touch detected <br>
+no touch detected <br>
+no touch detected <br>
+no touch detected <br>
+no touch detected <br>
+no touch detected <br>
+no touch detected <br>
+no touch detected <br>
+no touch detected <br>
+no touch detected <br>
+release registered <br>
+Phantom touch at 208 309 <br>
